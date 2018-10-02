@@ -71,6 +71,7 @@ namespace IntegrationTests
         }
 
         [Test]
+        [Category("DoNotRunOnAppVeyor")]
         public async Task RussianLogEntriesTest()
         {
             InitializePlatformAndEnvironment(TestRepoMasterCleanUnsynchronizedRussianLanguage);
