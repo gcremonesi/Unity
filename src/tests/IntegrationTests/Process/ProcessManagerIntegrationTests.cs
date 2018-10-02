@@ -146,6 +146,7 @@ namespace IntegrationTests
         }
 
         [Test]
+        [Category("DoNotRunOnAppVeyor")]
         public async Task CredentialHelperGetTest()
         {
             InitializePlatformAndEnvironment(TestRepoMasterCleanSynchronized);
