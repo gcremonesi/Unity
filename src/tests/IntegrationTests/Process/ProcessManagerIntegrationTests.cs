@@ -99,6 +99,7 @@ namespace IntegrationTests
         }
 
         [Test]
+        [Category("DoNotRunOnAppVeyor")]
         public async Task RemoteListTest()
         {
             InitializePlatformAndEnvironment(TestRepoMasterCleanSynchronized);
