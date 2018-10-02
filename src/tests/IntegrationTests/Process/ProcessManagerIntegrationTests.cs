@@ -29,6 +29,7 @@ namespace IntegrationTests
         }
 
         [Test]
+        [Category("DoNotRunOnAppVeyor")]
         public async Task LogEntriesTest()
         {
             InitializePlatformAndEnvironment(TestRepoMasterCleanUnsynchronized);
